@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" agent="Claude">
+  <diagram id="gradIS-deployment" name="Dijagram ugradnje">
+    <mxGraphModel dx="1573" dy="913" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontStyle=1;fontSize=13;" value="&lt;h1&gt;Dijagram ugradnje&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="28" width="270" x="280" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="Klijentska razina" vertex="1">
+          <mxGeometry height="140" width="185" x="30" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="m1a" parent="1" style="shape=module;align=center;spacingLeft=20;verticalAlign=top;whiteSpace=wrap;html=1;" value="Web preglednik" vertex="1">
+          <mxGeometry height="50" width="120" x="65" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="Web razina" vertex="1">
+          <mxGeometry height="150" width="185" x="283" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="m2a" parent="1" style="shape=module;align=center;spacingLeft=20;verticalAlign=top;whiteSpace=wrap;html=1;" value="Web aplikacija" vertex="1">
+          <mxGeometry height="50" width="120" x="318" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="Aplikacijska razina" vertex="1">
+          <mxGeometry height="320" width="200" x="550" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="m3a" parent="1" style="shape=module;align=center;spacingLeft=20;verticalAlign=top;whiteSpace=wrap;html=1;" value="REST API" vertex="1">
+          <mxGeometry height="50" width="130" x="588" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="m3b" parent="1" style="shape=module;align=center;spacingLeft=20;verticalAlign=top;whiteSpace=wrap;html=1;" value="Poslovna logika" vertex="1">
+          <mxGeometry height="50" width="130" x="588" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="m3c" parent="1" style="shape=module;align=center;spacingLeft=20;verticalAlign=top;whiteSpace=wrap;html=1;" value="Pristup podacima" vertex="1">
+          <mxGeometry height="50" width="130" x="588" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="e_api_logic" edge="1" parent="1" source="m3a" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m3b" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_logic_orm" edge="1" parent="1" source="m3b" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m3c" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="Podatkovna razina" vertex="1">
+          <mxGeometry height="165" width="200" x="550" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="m4a" parent="1" style="shape=module;align=center;spacingLeft=20;verticalAlign=top;whiteSpace=wrap;html=1;" value="SQL baza podataka" vertex="1">
+          <mxGeometry height="50" width="130" x="588" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="m4b" parent="1" style="shape=module;align=center;spacingLeft=20;verticalAlign=top;whiteSpace=wrap;html=1;" value="Pohrana dokumenata" vertex="1">
+          <mxGeometry height="38" width="130" x="588" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="c1" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=55;exitDy=0;exitPerimeter=0;entryX=0.295;entryY=0.99;entryDx=0;entryDy=0;entryPerimeter=0;" target="c2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="190" />
+            </Array>
+            <mxPoint x="284" y="196" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="c2" style="endArrow=none;html=1;rounded=0;exitX=0.249;exitY=-0.009;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.224;entryY=1.006;entryDx=0;entryDy=0;entryPerimeter=0;" target="c3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="c4" style="endArrow=none;html=1;rounded=0;entryX=0.999;entryY=0.351;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.003;exitY=0.348;exitDx=0;exitDy=0;exitPerimeter=0;" target="c3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fXvE0SwR83kSp1Boy9fZ-1" edge="1" parent="1" source="m4a" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m4b" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="530" as="sourcePoint" />
+            <mxPoint x="710" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
